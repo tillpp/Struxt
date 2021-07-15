@@ -1,5 +1,13 @@
 #include <iostream>
 #include <string>
-int main(){
-	std::cout << "Hello world"<< std::endl;
+#include "Symbol.h"
+#include "Line.h"
+#include "Garden.h"
+
+int main(int argc, char const *argv[])
+{
+	Garden garden;
+	garden.loadFromFile("data.strxt");	
+	getchar();
 }
+
